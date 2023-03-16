@@ -32,7 +32,7 @@ String::String(const String &other)
 
 String::~String()
 {
-    delete _data;
+    delete[] _data;
     _data = nullptr;
     _size = 0;
 }
